@@ -48,4 +48,4 @@ I want to continue learning about layouts and the best practices for creating th
 ## Author
 
 - Website - [Ralph Dela Cruz](https://ralphlewisdelacruz.wixsite.com/ralph)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/delacruzralph)
+- Frontend Mentor - [@delacruzralph](https://www.frontendmentor.io/profile/delacruzralph)
