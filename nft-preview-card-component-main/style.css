@@ -1,0 +1,160 @@
+@media (min-width: 375px) {
+
+  html,
+  body,
+  main {
+    margin: 0;
+    height: 100%;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: Outfit, Arial;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card-container {
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.5rem;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  max-width: 300px;
+  box-shadow: 0 2rem 20px hsla(215, 60%, 4%, 0.404);
+}
+
+.image-container {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.overlay {
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity .15s;
+  background-color: hsl(178, 100%, 50%);
+}
+
+.image-container:hover .overlay {
+  opacity: 0.5;
+}
+
+.image-container:hover .eye-icon {
+  opacity: 1;
+}
+
+.image {
+  display: block;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-24px, -24px);
+  z-index: 100;
+  opacity: 0;
+}
+
+.name {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.15s;
+  width: fit-content;
+}
+
+.name:hover {
+  color: hsl(178, 100%, 50%)
+}
+
+.description {
+  font-size: 1rem;
+  color: hsl(215, 51%, 70%);
+  line-height: 1.75rem;
+  margin: 0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.time-limit {
+  display: flex;
+  align-items: center;
+}
+
+.ethereum-price {
+  margin-left: 0.5rem;
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.days-left {
+  margin-left: 0.5rem;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.divider {
+  width: 100%;
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+.credits {
+  color: hsl(215, 51%, 70%);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.author {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  transition: color 0.15s;
+  cursor: pointer;
+}
+
+.author:hover {
+  color: hsl(178, 100%, 50%)
+}
