@@ -1,0 +1,132 @@
+html,
+body,
+main {
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: hsl(225, 100%, 98%);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (min-width: 50em) {
+  body {
+    background: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(225, 100%, 98%);
+  }
+}
+
+.card-container {
+  width: 90%;
+  max-width: 375px;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1em;
+  box-shadow: 0 1em 4em hsl(224, 39%, 74%);
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.order-info {
+  padding: 2em;
+}
+
+.order-summary {
+  font-size: 1.5em;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin: 0;
+}
+
+.description {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1em;
+  border-radius: 0.5em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+.plan-type {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin: 0;
+}
+
+.plan-price {
+  margin: 0;
+  color: hsl(224, 23%, 55%);
+}
+
+.change {
+  text-decoration: underline;
+  font-weight: 900;
+  font-size: .8em;
+  color: hsl(245, 75%, 52%);
+  cursor: pointer;
+  transition: color 0.15s, text-decoration 0.15s;
+}
+
+.change:hover {
+  color: hsl(245, 85%, 69%);
+  text-decoration: none;
+}
+
+.proceed {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(245, 75%, 52%);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1em;
+  border: none;
+  width: 100%;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 1em 3em hsl(224, 39%, 74%);
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.proceed:hover {
+  background-color:hsl(245, 85%, 69%);
+}
+
+.cancel {
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.cancel:hover {
+  color:hsl(223, 47%, 23%)
+}
