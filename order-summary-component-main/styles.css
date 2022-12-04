@@ -19,6 +19,7 @@ body {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 16px;
   text-align: center;
+  padding: 1.5rem;
 }
 
 @media (min-width: 50em) {
@@ -31,7 +32,6 @@ body {
 }
 
 .card-container {
-  width: 90%;
   max-width: 375px;
   overflow: hidden;
   background-color: hsl(0, 0%, 100%);
