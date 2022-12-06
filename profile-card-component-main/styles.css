@@ -13,18 +13,10 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
 
-.top-bg {
-  position: fixed;
-  transform: translate(-50%, -50%);
-  z-index: -100;
-}
-
-.bottom-bg {
-  position: fixed;
-  transform: translate(50%, 50%);
-  z-index: -100;
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
 .card-container {
