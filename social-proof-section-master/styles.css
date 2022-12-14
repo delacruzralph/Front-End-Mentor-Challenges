@@ -48,7 +48,7 @@ main p {
     margin-top: 1rem;
     margin-bottom: 0;
     font-weight: 700;
-    color:hsl(300, 43%, 22%)
+    color: hsl(300, 43%, 22%)
 }
 
 .review {
@@ -82,11 +82,76 @@ main p {
     color: hsl(333, 80%, 67%);
     font-size: 1.2rem;
     font-weight: 400;
-    margin:0;
+    margin: 0;
 }
 
 .review p {
-    color:hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
     margin: 0;
     line-height: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    html {
+        height: 100%;
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left 0 top 0, right 0 bottom 0;
+    }
+
+    body {
+        padding: 4rem 8rem;
+    }
+
+    main {
+        text-align: left;
+    }
+
+    main h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+
+    .top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10rem;
+    }
+
+    .rating {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+        white-space:nowrap;
+    }
+
+    .rating p {
+        margin: 0 2rem;
+    }
+
+    #reviews {
+        transform: translateX(-5rem);
+    }
+
+    #report-guru {
+        transform: translateX(-2.5rem);
+    }
+
+    .reviews {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    #irene {
+        transform: translateY(1rem);
+    }
+
+    #anne {
+        transform: translateY(2rem);
+    }
+
 }
