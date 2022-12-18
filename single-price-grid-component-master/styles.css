@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+html, body {
+  font-family: 'Karla', sans-serif;
+  background-color: hsl(204, 43%, 93%);
+ }
+
+ main {
+  margin: 4rem 1.5rem;
+  background-color: white;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ }
+
+ .join-our-community {
+  padding: 1.5rem;
+  background-color: white;
+ }
+
+.join-our-community h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+.join-our-community p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  color:hsl(218, 22%, 67%);
+ }
+
+ .monthly-subscription {
+  padding: 1.5rem;
+  background-color: hsl(179, 62%, 43%);
+ }
+
+ .monthly-subscription p {
+  margin: 0;
+  margin-top: 1rem;
+  color: white;
+ }
+
+ .price {
+  margin-top: 1rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+ }
+
+ span {
+  margin-left: .75rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.5;
+ }
+
+ button {
+  font-family: 'Karla', sans-serif;
+  color: white;
+  font-size: 1rem;
+
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 0.3rem;
+
+  margin-top: 2rem;
+  padding: .8rem 0;
+  width: 100%;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ }
+
+ .why-us {
+  padding: 1.5rem;
+  background-color: hsl(179, 62%, 43%);
+  filter: brightness(110%);
+ }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: hsl(204, 43%, 93%);
+  line-height: 1.1rem;
+}
+
+ h1 {
+  margin: 0;
+  font-size: 1.25rem
+ }
+
+ h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: white;
+ }
+
+ h3 {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  color: hsl(71, 73%, 54%);
+ }
