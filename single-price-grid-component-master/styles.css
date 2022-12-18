@@ -104,3 +104,41 @@ ul {
   font-size: 1rem;
   color: hsl(71, 73%, 54%);
  }
+
+ @media (min-width: 800px) {
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    min-width: 600px;
+    margin: 10% 30%;
+    display: grid;
+    grid-template-areas: 
+      "join-our-community join-our-community"
+      "monthly-subscription why-us";
+  }
+
+  .join-our-community {
+    padding: 2rem;
+    grid-area: join-our-community;
+  }
+
+  .monthly-subscription {
+    padding: 2rem;
+    grid-area: monthly-subscription;
+  }
+
+  .why-us {
+    padding: 2rem;
+    grid-area: why-us;
+  }
+  
+ }
