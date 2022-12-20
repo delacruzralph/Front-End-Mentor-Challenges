@@ -26,11 +26,11 @@ body {
 
   padding-block: 2rem;
 
-  /* min: 95% width, max: 80rem */
+  /* will be 95% of browser width at the minimum but can grow up to 80rem */
   width: min(95%, 80rem);
 
   /* Horizontal Center */
-  margin-inline: auto;
+  margin: auto;
 }
 
 .testimonial {
