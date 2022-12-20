@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body,
+h2,
+p {
+  margin: 0;
+}
+
+html,
+body {
+  font-size: 13px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+body {
+  /* Vertical Center */
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.testimonials {
+  display: grid;
+  gap: 2rem;
+
+  padding-block: 2rem;
+
+  /* min: 95% width, max: 80rem */
+  width: min(95%, 80rem);
+
+  /* Horizontal Center */
+  margin-inline: auto;
+}
+
+.testimonial {
+  padding: 2.2rem;
+  border-radius: .75rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+img {
+  width: 2.5rem;
+  border-radius: 2.5rem;
+  border: solid 2px rgba(255, 255, 255, .25)
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author-info {
+  margin-left: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.name {
+  line-height: 1;
+  font-size: 1rem;
+}
+
+.title {
+  margin-top: 0.25rem;
+  opacity: .5;
+  font-size: .875rem;
+}
+
+.hightlight {
+  margin: 1rem 0;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+}
+
+.quote {
+  color: hsl(0, 0%, 100%);
+  opacity: .7;
+  font-weight: 100;
+  line-height: 1.4;
+}
+
+.daniel {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 2rem;
+}
+
+.jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.jeanette {
+  background-color: white;
+}
+
+.jeanette h2,
+.jeanette p {
+  color: hsl(217, 19%, 35%);
+}
+
+.patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.kira {
+  background-color: white;
+}
+
+.kira h2,
+.kira p {
+  color: hsl(217, 19%, 35%);
+}
+
+@media screen and (min-width: 1024px) {
+
+  .testimonials {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+  }
+
+  .daniel {
+    grid-area: daniel;
+  }
+
+  .jonathan {
+    grid-area: jonathan;
+  }
+
+  .jeanette {
+    grid-area: jeanette;
+  }
+
+  .patrick {
+    grid-area: patrick;
+  }
+
+  .kira {
+    grid-area: kira;
+  }
+}
