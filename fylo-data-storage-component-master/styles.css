@@ -86,9 +86,10 @@ html {
 body {
   display: grid;
   place-content: center;
-  grid-template-columns: min(80%, 70rem);
-  ;
   min-height: 100vh;
+
+  grid-template-columns: min(80%, 70rem);
+
   background-image: url(images/bg-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
