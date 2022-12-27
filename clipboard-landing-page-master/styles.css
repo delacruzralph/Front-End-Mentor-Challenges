@@ -341,10 +341,10 @@ a.button:hover {
   opacity: 0.8;
 }
 
-#ios {
+.ios {
   background-color: hsl(171, 66%, 44%);
 }
 
-#mac {
+.mac {
   background-color: hsl(233, 100%, 69%);
 }
