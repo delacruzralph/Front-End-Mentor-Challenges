@@ -306,9 +306,11 @@ p {
     text-align: left;
   }
 
+  .icon-content-group p,
   .keep-track-features p {
     font-size: .9rem;
   }
+
 }
 
 /* Components */
@@ -341,10 +343,10 @@ a.button:hover {
   opacity: 0.8;
 }
 
-.ios {
+a.ios {
   background-color: hsl(171, 66%, 44%);
 }
 
-.mac {
+a.mac {
   background-color: hsl(233, 100%, 69%);
 }
