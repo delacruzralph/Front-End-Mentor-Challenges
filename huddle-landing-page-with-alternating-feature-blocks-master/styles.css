@@ -4,6 +4,7 @@
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
+
 *,
 *::before,
 *::after {
@@ -53,4 +54,116 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* Styles */
+
+html {
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p,
+button,
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ==========
+   Hero Section
+   ========== */
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header img {
+  width: min(35%, 200px);
+}
+
+header button {
+  border: none;
+  border-radius: 1rem;
+  padding: 0.4em 2em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Main Hero Section */
+
+.hero-section {
+  background-color: hsl(193, 100%, 96%);
+  background-image: url(images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 0 top -5rem;
+  text-align: center;
+}
+
+.hero-section.content {
+  padding: 3rem 2rem;
+}
+
+.hero-section h1 {
+  line-height: 1.35;
+}
+
+.hero-section p {
+  font-size: .9rem;
+  padding-block: 1.5rem;
+}
+
+.hero-section.content button {
+  border: none;
+  border-radius: 2rem;
+  padding: .75em 4em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: hsl(322, 100%, 66%);
+}
+
+.hero-section.content img {
+  margin-top: 2rem;
+}
+
+/* ==========
+   Features Section
+   ========== */
+
+.features-section {
+  padding: 2rem 1rem;
+}
+
+.card {
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  margin-block: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card h2 {
+  margin-top: 3rem;
+  color:hsl(192, 100%, 9%);
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin-top: 0.8rem;
+  color: hsl(208, 11%, 55%);
+  font-size: 0.8rem;
 }
