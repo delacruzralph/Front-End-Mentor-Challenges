@@ -128,7 +128,7 @@ header button {
 .pink-button {
   border: none;
   border-radius: 2rem;
-  padding: .9em 4em;
+  padding: .9em 5em;
   font-size: 0.7rem;
   font-weight: 700;
   color: white;
@@ -188,7 +188,7 @@ header button {
 }
 
 .get-started button {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-size: 0.6rem;
 }
 
