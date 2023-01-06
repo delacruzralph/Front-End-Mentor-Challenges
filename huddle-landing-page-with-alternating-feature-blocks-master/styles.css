@@ -125,10 +125,10 @@ header button {
   padding-block: 1.5rem;
 }
 
-.hero-section.content button {
+.pink-button {
   border: none;
   border-radius: 2rem;
-  padding: .75em 4em;
+  padding: .9em 4em;
   font-size: 0.7rem;
   font-weight: 700;
   color: white;
@@ -158,7 +158,7 @@ header button {
 
 .card h2 {
   margin-top: 3rem;
-  color:hsl(192, 100%, 9%);
+  color: hsl(192, 100%, 9%);
   font-size: 1.2rem;
 }
 
@@ -166,4 +166,97 @@ header button {
   margin-top: 0.8rem;
   color: hsl(208, 11%, 55%);
   font-size: 0.8rem;
+}
+
+/* ==========
+   Get Started Card
+   ========== */
+
+.get-started {
+  z-index: 1;
+  transform: translateY(5rem);
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  margin: 2rem 0.75rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+}
+
+.get-started h2 {
+  font-size: 1rem;
+}
+
+.get-started button {
+  margin-top: 2rem;
+  font-size: 0.6rem;
+}
+
+/* ==========
+   Footer
+   ========== */
+
+footer {
+  padding: 0 1rem;
+  padding-block: 6rem 2rem;
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(193, 100%, 96%);
+  font-size: .9rem;
+}
+
+footer ul {
+  list-style: none;
+  line-height: 2.5;
+  margin-block: 2rem;
+  padding: 0;
+}
+
+footer a {
+  color: hsl(193, 100%, 96%);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.logo-white {
+  width: min(50%, 150px);
+  filter: brightness(0) invert(1);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-block: 1.5rem;
+}
+
+.location img {
+  align-self: baseline;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-media-icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+  margin: .25rem;
+  border: solid white 1px;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: color .15s, border-color .15s;
+}
+
+.copyright {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.6rem;
 }
