@@ -91,31 +91,191 @@ h6 {
   --accent-color-1: hsl(224, 93%, 58%);
   --accent-color-2: hsl(170, 45%, 43%);
   --neutral-color-1: hsl(240, 75%, 98%);
-  --neutral-color-2:  hsl(0, 0%, 75%);
+  --neutral-color-2: hsl(0, 0%, 75%);
 }
 
-.visually-hidden { 
-    border: 0;
-    padding: 0;
-    margin: 0;
-    position: absolute !important;
-    height: 1px; 
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-    clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
-    clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
-    white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+.visually-hidden {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(1px, 1px, 1px, 1px);
+  /*maybe deprecated but we need to support legacy browsers */
+  clip-path: inset(50%);
+  /*modern browsers, clip-path works inwards from each corner*/
+  white-space: nowrap;
+  /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 }
-
-/* ==========
-   TYPOGRAPHY
-   ==========*/
 
 body {
   font-family: 'Open-Sans', sans-serif;
 }
 
-h1, h2, button, header {
+h1,
+h2,
+input,
+header {
   font-family: 'Raleway', sans-serif;
+}
+
+/* ==========
+   HEADER SECTION
+   ==========*/
+
+header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: min(25%, 150px);
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+}
+
+header li {
+  font-size: 0.8rem;
+  margin-left: 1.5em;
+  display: inline;
+}
+
+header a {
+  color: var(--primary-color-1);
+  text-decoration: none;
+}
+
+/* ==========
+   HERO SECTION
+   ==========*/
+
+.hero-section {
+  padding: 4rem 2.25rem;
+  color: var(--primary-color-1);
+  text-align: center;
+}
+
+.hero-section h1 {
+  padding-block: 1em;
+}
+
+.hero-section p {
+  font-size: 0.9rem;
+}
+
+.hero-section form {
+  margin-block: 1rem;
+}
+
+.hero-section input {
+  width: 100%;
+  margin-block: 0.5rem;
+  padding-block: 0.5rem;
+  border-radius: 0.2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.hero-section input[type=email] {
+  border: 1px solid var(--primary-color-1);
+  padding-left: 1.5rem;
+  font-size: 0.8rem;
+}
+
+::placeholder {
+  color: var(--neutral-color-2);
+}
+
+.hero-section input[type=submit] {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--neutral-color-1);
+  background-color: var(--accent-color-1);
+  border: none;
+}
+
+/* ==========
+   STAY PRODUCTIVE SECTION
+   ==========*/
+
+.stay-productive-section {
+  padding: 5rem 2.25rem;
+  background-image: url(images/bg-curve-mobile.svg), linear-gradient(transparent 0%, var(--neutral-color-1) 10%, var(--neutral-color-1));
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stay-productive-section h2 {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.stay-productive-section > p {
+  margin-block: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--primary-color-2);
+}
+
+.see-how-fylo-works-action {
+  border-bottom: 1px var(--accent-color-2) solid;
+}
+
+.see-how-fylo-works-action img {
+  display: inline;
+  vertical-align: text-top;
+}
+
+.see-how-fylo-works-action a {
+  text-decoration: none;
+  color: var(--accent-color-2);
+  font-size: 0.85rem;
+}
+
+.stay-productive-section figure {
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1.5rem;
+}
+
+.stay-productive-section blockquote {
+  color: var(--primary-color-1);
+  margin-block: 1rem;
+  font-size: 0.75rem;
+}
+
+.stay-productive-section figcaption {
+  display: flex;
+  align-items: center;
+}
+
+.stay-productive-section figcaption img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.stay-productive-section figcaption .author-name {
+  font-size: 0.8rem;
+  color: var(--primary-color-1);
+  font-weight: 700;
+}
+
+.stay-productive-section figcaption .author-position {
+  font-size: 0.5rem;
+  color: var(--primary-color-2);
 }
