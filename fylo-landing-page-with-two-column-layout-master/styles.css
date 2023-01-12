@@ -223,7 +223,7 @@ header a {
   font-size: 1rem;
 }
 
-.stay-productive-section > p {
+.stay-productive-section>p {
   margin-block: 1.5rem;
   font-size: 0.85rem;
   color: var(--primary-color-2);
@@ -278,4 +278,117 @@ header a {
 .stay-productive-section figcaption .author-position {
   font-size: 0.5rem;
   color: var(--primary-color-2);
+}
+
+/* ==========
+   EARLY ACCESS SECTION
+   ==========*/
+
+.early-access-section {
+  text-align: center;
+  padding: 4rem 2.5rem;
+  background-color: var(--primary-color-2);
+  color: white;
+}
+
+.early-access-section h2 {
+  font-size: 1rem;
+}
+
+.early-access-section p {
+  margin-block: 1rem;
+  font-size: .9rem;
+}
+
+.early-access-section input {
+  width: 80%;
+  margin-block: 0.25rem;
+  padding-block: 0.5rem;
+  border-radius: 0.2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.early-access-section input[type=email] {
+  border: none;
+  padding-left: .5rem;
+  font-size: 0.6rem;
+}
+
+.early-access-section input[type=submit] {
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 0.6rem;
+  color: var(--neutral-color-1);
+  background-color: var(--accent-color-1);
+  border: none;
+}
+
+/* ==========
+   FOOTER SECTION
+   ==========*/
+
+footer {
+  background-color: var(--primary-color-1);
+  color: white;
+  padding: 4rem 2rem;
+  font-size: 0.9rem;
+}
+
+.logo-white {
+  width: min(50%, 175px);
+  filter: brightness(0) invert(1);
+  margin-bottom: 2rem;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.info-container a {
+  margin-left: 1rem;
+}
+
+address{ 
+  font-style:normal;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  text-emphasis: none;
+}
+
+footer ul {
+  list-style: none;
+  line-height: 2.5;
+  margin-block: 2rem;
+  padding: 0;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-media-icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+  margin: .25rem;
+  border: solid white 1px;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: color .15s, border-color .15s;
+}
+
+.social-media-icon:hover {
+  color: var(--accent-color-1);
+  border-color: var(--accent-color-1);
 }
